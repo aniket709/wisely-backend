@@ -11,7 +11,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
-    origin: "http://localhost:5173",
+    origin: "https://wisely-frontend-e1mt-eb71xzp2c-anikets-projects-f234bada.vercel.app",
     credentials: true
 }));
 app.use("/api/v1", country_1.default);

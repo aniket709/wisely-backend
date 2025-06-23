@@ -14,8 +14,11 @@ interface CountryData {
 }
 
 export async function getCountryFacts(name: string) {
-  const baseUrl = process.env.REST_COUNTRIES_API || "https://restcountries.com/v3.1/name/name";
-  const url = `https://restcountries.com/v3.1/name/${encodeURIComponent(name)}?fullText=false`;
+
+    const baseUrl = process.env.REST_COUNTRIES_API || "https://restcountries.com/v3.1/name";
+    const url = `${baseUrl}/${encodeURIComponent(name)}?fullText=false`;
+    
+
 
 
   try {
