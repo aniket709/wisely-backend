@@ -16,7 +16,7 @@ app.use(cors({
 
 app.use("/api/v1",getCountryFacts)
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 10000;
 
 app.get("/",(req,res)=>{
     res.send("hi from derver")
