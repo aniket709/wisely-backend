@@ -13,6 +13,7 @@ router.get("/:name", async (req: Request, res: Response): Promise<any> => {
 
   try {
     const facts = await getCountryFacts(name);
+ 
     console.log("[Route] Facts fetched:", facts);
     return res.json(facts);
   } catch (error) {

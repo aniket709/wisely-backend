@@ -30,7 +30,7 @@ export async function getCountryFacts(name: string) {
 
     if (!response.data || response.data.length === 0) {
       console.log("No country data found.");
-      return null; 
+      throw new Error("Country not found"); 
     }
 
     const data = response.data[0];
