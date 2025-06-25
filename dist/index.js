@@ -15,7 +15,7 @@ app.use((0, cors_1.default)({
     credentials: true
 }));
 app.use("/api/v1", country_1.default);
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 10000;
 app.get("/", (req, res) => {
     res.send("hi from derver");
 });

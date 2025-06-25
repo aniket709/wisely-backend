@@ -9,10 +9,7 @@ import cors from "cors";
 const app = express();
 app.use(express.json());
 
-app.use(cors({
-    origin: "https://wisely-frontend-e1mt-eb71xzp2c-anikets-projects-f234bada.vercel.app", 
-    credentials: true                
-  }));
+app.use(cors());
 
 app.use("/api/v1",getCountryFacts)
 
